@@ -1,0 +1,25 @@
+                                                                   Assignment 2.3
+
+
+1)components of Hadoop 1.x
+
+A)Major Components of Hadoop 1.x  are: HDFS and MapReduce. 
+
+a.HDFS:
+          HDFS is a Hadoop Distributed File System  designed to work with Large DataSets with default block size is 64MB.HDFS component is again divided into two sub-components.
+
+1.Name Node:
+                       Name Node is palced in master Node.It is used to store the meta data  about the data nodes which are also calles as the slave nodes.
+
+2.Data Node:
+                    Data Nodes are places in Slave Nodes. It is used to store our Application Actual Data. It stores data in Data Slots of size 64MB by default.
+
+b.MapReduce:
+MapReduce is a Distributed Data Processing or Batch Processing Programming Model. Like HDFS, MapReduce component also uses Commodity Hardware 
+
+MapReduce component is again divided into two sub-components:
+
+1.Job Tracker:
+Job Tracker is used to assign MapReduce Tasks to Task Trackers in the Cluster of Nodes. Sometimes, it reassigns same tasks to other Task Trackers as previous Task Trackers are failed or shutdown scenarios.
+2.Task Tracker:
+Task Tracker executes the Tasks which are assigned by Job Tracker and sends the status of those tasks to Job Tracker.
